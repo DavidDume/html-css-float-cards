@@ -9,44 +9,60 @@ main {
     margin: auto;
 }
 
-.text {
+.intro {
     text-align: center;
     margin-top: 40px;
 }
 
-.text h1 {
+.intro h1 {
     color: pink;
     font-family: 'Fredoka One', sans-serif;
     font-size: 35px;
 }
 
-.text p {
+.intro p {
     margin-top: 30px;
 }
 
 .columns {
-    /*margin: 20px;*/
+    margin: 20px;
 }
 
-.col_text {
-    float: right;
-}
 
 .col {
-    vertical-align: middle;
     float: left;
     width: calc(100% / 3);
+    padding: 10px;
 }
 
-.col img {
-    height: 80px;
-    float: left;
+
+.col a {
+    text-decoration: none;
+    color: #00b4d8;
+    display: block;
+}
+
+.card img {
+    height: 100px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .col::after {
     content: "";
     clear: both;
     display: table;
+}
+
+.card {
+    color: white;
+    background-color: #1d3557;
+    min-width: 330.22px;
+}
+
+.text {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .clearfix::after {
